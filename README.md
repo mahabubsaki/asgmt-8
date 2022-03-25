@@ -1,8 +1,8 @@
 # Food Point
 
-# Getting Started with Create React App
+# Getting Started with Food Point App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped by [Mahabub Saki](https://www.facebook.com/mahabubsaki/).
 
 ## Available Scripts
 

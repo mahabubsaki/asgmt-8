@@ -47,10 +47,15 @@ const Main = () => {
         const storedArray = localStorageArray()
         const index = Math.floor(Math.random() * storedArray.length)
         const random = storedArray[index]
-        localStorage.removeItem('cart')
-        addToLocalStorage(random.id)
-        setList([random])
-        alert(`Randomly choosed to buy ${random.name}`)
+        if (random) {
+            localStorage.removeItem('cart')
+            addToLocalStorage(random.id)
+            setList([random])
+            alert(`Randomly choosed to buy ${random.name}`)
+        }
+        else {
+            alert("To get a random food please add food to list")
+        }
     }
     const handleSingleDelete = (id) => {
         removeFromLocalStorage(id)

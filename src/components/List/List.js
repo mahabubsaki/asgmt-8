@@ -7,7 +7,7 @@ const List = ({ item, handleSingleDelete }) => {
     const { name, img, id } = item;
     return (
         <div className="list">
-            <img src={img} alt="" />
+            <img src={img} alt="fruit" />
             <p>{name}</p>
             <div>
                 <button onClick={() => handleSingleDelete(id)}>
