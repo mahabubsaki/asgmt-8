@@ -1,0 +1,74 @@
+[
+    {
+      "id": "623dd1cd533d5bb8cd4d7a77",
+      "price": 200,
+      "name": "Mango",
+      "img": "https://img.freepik.com/free-photo/mango-tree-with-nature_1150-12252.jpg?t=st=1648219257~exp=1648219857~hmac=9084c9863179fe2c46af2bf9e41dcbb178b09c21746cfdeaa6489db81a5110f2&w=400"
+    },
+    {
+        "id": "623dd3cc00399a4764298644",
+        "price": 350,
+        "name": "Lichi",
+        "img": "https://img.freepik.com/free-photo/lychee-background-garden_1150-12518.jpg?size=626&ext=jpg&ga=GA1.1.4245302.1642996278"
+    },
+    {
+        "id": "623dd4f682ccec1bcb98b02c",
+        "price": 150,
+        "name": "JackFruit",
+        "img":"https://img.freepik.com/free-photo/jackfruit-isolated-white-backgroundxa_610539-327.jpg?w=740"
+      },
+      {
+        "id": "623dd52296575c32fec2c3ad",
+        "price": 450,
+        "name": "Grape",
+        "img":"https://img.freepik.com/free-photo/green-grape_1203-6913.jpg?w=740&t=st=1648219441~exp=1648220041~hmac=3dedfa6b5fce0a98d5169de0bf6dccda4e6a19f989edfad720f21b2fcca5e984"
+      },
+      {
+        "id": "623dd57c4290df56e658a58b",
+        "price": 500,
+        "name": "Orange",
+        "img":"https://img.freepik.com/free-photo/cut-orange-parts-whole-fruit-with-green-leaves_74855-5381.jpg?w=740&t=st=1648219503~exp=1648220103~hmac=449bbed7891d36ef7f79e398dcc8ce409095f9359a64457f31798e1ca6bd71b9"
+      },
+      {
+        "id": "623dd5ce49c3aa7e13916972",
+        "price": 100,
+        "name": "Apple",
+        "img":"https://img.freepik.com/free-photo/apple-red-mellow-juicy-fresh-ripe-half-cut-isolated_179666-163.jpg?w=740&t=st=1648219593~exp=1648220193~hmac=fc6bf5ea61080ff1242f7e2498cda4686f1ed1b6316fdd7a55c8ff496d089a17"
+      },
+      {
+        "id": "623dd60219de43610aecb85b",
+        "price": 70,
+        "name": "Banana",
+        "img":"https://img.freepik.com/free-photo/yellow-banana-fruit_1203-7489.jpg?w=740&t=st=1648219639~exp=1648220239~hmac=042d59b27b00ed31c1c3e5096d7e1fa981bda28d165bae897701fa3e11e8788c"
+      },
+      {
+        "id": "623dd62096a275488c392818",
+        "price": 650,
+        "name": "Cherry",
+        "img":"https://img.freepik.com/free-photo/fresh-cherry-wood-bowl_1339-5137.jpg?w=740&t=st=1648219709~exp=1648220309~hmac=faecfb9e329a397b6cdbb83cf75e53cd9883eb7078026f15403813a0167c79ff"
+      },
+      {
+        "id": "623dd67cd482e82afbd8e378",
+        "price": 700,
+        "name": "Coconut",
+        "img":"https://img.freepik.com/free-photo/fresh-coconuts-put-white-wooden-background_1150-28236.jpg?w=740&t=st=1648219799~exp=1648220399~hmac=1339a2435a4e7a0a4e80a66e607f918dab4d3463927de9d7c4b369a15f69b243"
+      },
+      {
+        "id": "623dd6b3aad7f0bf4cc1fa71",
+        "price": 50,
+        "name": "Lemon",
+        "img":"https://img.freepik.com/free-photo/fresh-yellow-lemons_144627-9633.jpg?w=740&t=st=1648219876~exp=1648220476~hmac=dcf2b11a6b072b6c8f9e8464bb29fb7dcf45323037cdacd7613c61822e4b4fa8"
+      },
+      {
+        "id": "623dd6ffdd4fb5e400770f40",
+        "price": 300,
+        "name": "Water Melon",
+        "img":"https://img.freepik.com/free-photo/cut-watermelon-knife-blue-table_53876-96799.jpg?w=740&t=st=1648219926~exp=1648220526~hmac=f5599955257c3be21cc0940fcd681ead6ecdf16bf5c67e0ce88937a293e31ad6"
+      },
+      {
+        "id": "623dd74f0db42f1b2ae0707c",
+        "price": 250,
+        "name": "Pineapple",
+        "img":"https://img.freepik.com/free-photo/pineapple-smoothie_1205-772.jpg?1&w=740&t=st=1648219978~exp=1648220578~hmac=5b39b2d26ed0f8a7ce0700a08f3f8c9789db93385c4ab2c96ace04eedf3d7905"
+      }
+  ]
