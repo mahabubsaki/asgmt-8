@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Main.css'
 import EachItem from '../EachItem/EachItem'
 import Cart from '../Cart/Cart';
-import { addToLocalStorage } from '../utilities/fakeDb';
+import { addToLocalStorage, removeFromLocalStorage } from '../utilities/fakeDb';
 
 const Main = () => {
     const [foods, setFoods] = useState([])
@@ -23,8 +23,7 @@ const Main = () => {
         }
         setList(storedArray)
     }, [foods])
-    const handleClick = (item) => {
-        addToLocalStorage(item.id)
+    const localStorageArray = () => {
         const storageItems = JSON.parse(localStorage.getItem('cart'))
         let storedArray = []
         for (let id in storageItems) {
@@ -33,6 +32,11 @@ const Main = () => {
                 storedArray.push(matched)
             }
         }
+        return storedArray
+    }
+    const handleClick = (item) => {
+        addToLocalStorage(item.id)
+        const storedArray = localStorageArray()
         setList(storedArray)
     }
     const handleChooseAgainClick = () => {
@@ -40,20 +44,19 @@ const Main = () => {
         setList([])
     }
     const handleChooseForMeClick = () => {
-        const storageItems = JSON.parse(localStorage.getItem('cart'))
-        let storedArray = []
-        for (let id in storageItems) {
-            const matched = foods.find(food => food.id === id)
-            if (matched) {
-                storedArray.push(matched)
-            }
-        }
+        const storedArray = localStorageArray()
         const index = Math.floor(Math.random() * storedArray.length)
         const random = storedArray[index]
         localStorage.removeItem('cart')
         addToLocalStorage(random.id)
         setList([random])
         alert(`Randomly choosed to buy ${random.name}`)
+    }
+    const handleSingleDelete = (id) => {
+        removeFromLocalStorage(id)
+        const storedArray = localStorageArray()
+        const filtered = storedArray.filter(item => item.id !== id)
+        setList(filtered)
     }
     return (
         <div>
@@ -67,7 +70,7 @@ const Main = () => {
                         }
                     </div>
                 </div>
-                <Cart items={list} handleChooseAgainClick={handleChooseAgainClick} handleChooseForMeClick={handleChooseForMeClick}></Cart>
+                <Cart items={list} handleChooseAgainClick={handleChooseAgainClick} handleChooseForMeClick={handleChooseForMeClick} handleSingleDelete={handleSingleDelete}></Cart>
             </div>
         </div>
     );

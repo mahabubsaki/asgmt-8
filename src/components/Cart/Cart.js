@@ -2,14 +2,14 @@ import React from 'react';
 import List from '../List/List';
 import './Cart.css'
 
-const Cart = ({ items, handleChooseAgainClick, handleChooseForMeClick }) => {
+const Cart = ({ items, handleChooseAgainClick, handleChooseForMeClick, handleSingleDelete }) => {
     return (
         <div className="cart-container">
             <div className="details">
                 <h2>Cart Information</h2>
                 <div className="list-container">
                     {
-                        items.map(item => <List item={item} key={item.id}></List>)
+                        items.map(item => <List item={item} key={item.id} handleSingleDelete={handleSingleDelete}></List>)
                     }
                 </div>
                 <section>

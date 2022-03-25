@@ -3,14 +3,14 @@ import './List.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const List = ({ item }) => {
-    const { name, img } = item;
+const List = ({ item, handleSingleDelete }) => {
+    const { name, img, id } = item;
     return (
         <div className="list">
             <img src={img} alt="" />
             <p>{name}</p>
             <div>
-                <button>
+                <button onClick={() => handleSingleDelete(id)}>
                     <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
                 </button>
             </div>
