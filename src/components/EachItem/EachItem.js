@@ -3,8 +3,8 @@ import './EachItem.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const EachItem = (props) => {
-    const { name, price, img } = props.item
+const EachItem = ({ item, handleClick }) => {
+    const { name, price, img } = item
     return (
         <div className="item">
             <div className="info-div">
@@ -12,11 +12,11 @@ const EachItem = (props) => {
                 <h1>{name}</h1>
                 <h2>৳{price}</h2>
             </div>
-            <button>Add To List
+            <button onClick={() => handleClick(item)}>Add To List
                 <FontAwesomeIcon icon={faPlus} className="icon"></FontAwesomeIcon>
             </button>
 
-        </div>
+        </div >
     );
 };
 
