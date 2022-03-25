@@ -35,18 +35,39 @@ const Main = () => {
         }
         setList(storedArray)
     }
+    const handleChooseAgainClick = () => {
+        localStorage.removeItem('cart')
+        setList([])
+    }
+    const handleChooseForMeClick = () => {
+        const storageItems = JSON.parse(localStorage.getItem('cart'))
+        let storedArray = []
+        for (let id in storageItems) {
+            const matched = foods.find(food => food.id === id)
+            if (matched) {
+                storedArray.push(matched)
+            }
+        }
+        const index = Math.floor(Math.random() * storedArray.length)
+        const random = storedArray[index]
+        localStorage.removeItem('cart')
+        addToLocalStorage(random.id)
+        setList([random])
+        alert(`Randomly choosed to buy ${random.name}`)
+    }
     return (
         <div>
             <div className="main-container">
                 <div className="product-container">
                     <h2>You can add Only 4 Foods</h2>
+                    <h1>Confused Buyer</h1>
                     <div className="products">
                         {
                             foods.map(food => <EachItem item={food} key={food.id} handleClick={handleClick}></EachItem>)
                         }
                     </div>
                 </div>
-                <Cart items={list}></Cart>
+                <Cart items={list} handleChooseAgainClick={handleChooseAgainClick} handleChooseForMeClick={handleChooseForMeClick}></Cart>
             </div>
         </div>
     );

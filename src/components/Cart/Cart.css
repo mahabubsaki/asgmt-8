@@ -1,3 +1,6 @@
+.list-container {
+    width: 100%;
+}
 .cart-container h2{
     text-align: center;
 }
@@ -5,6 +8,28 @@
  position:sticky;
  top: 0;
 }
-.list-container {
-    width: 100%;
+section {
+    display: flex;
+    justify-content:center;
+    margin-bottom:12px;
 }
+.btn-choose {
+    border : 1px solid #42C2FF;
+    background-color:#42C2FF;
+    padding:10px;
+    border-radius:10px;
+    margin:0 auto;
+}
+.btn-choose:hover,.btn-for-me:hover{
+    background-color:transparent;
+    transition: all 0.5s ease-in-out;
+}
+.btn-for-me {
+    border : 1px solid #14465e;
+    background-color:#285d75;
+    padding:10px;
+    border-radius:10px;
+    margin:0 auto;
+}
+
+
