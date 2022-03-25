@@ -3,8 +3,8 @@ import './Cart.css'
 
 const Cart = () => {
     return (
-        <div>
-
+        <div className="cart-container">
+            <h2>Cart Information</h2>
         </div>
     );
 };

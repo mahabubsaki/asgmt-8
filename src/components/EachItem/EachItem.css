@@ -1,0 +1,35 @@
+.item {
+    border: 1px solid rgb(158, 154, 154);
+    padding:2px;
+    border-radius: 15px;
+    position: relative;
+}
+.info-div{
+    margin-bottom:60px;
+}
+.item img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.item button {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border:none;
+    padding:10px;
+    border-top:1px solid rgb(158, 154, 154);
+    background-color:#85F4FF;
+    font-size: 20px;
+}
+.item button:hover{
+    background-color:transparent;
+    transition: all 0.5s ease-in-out;
+}
+.icon {
+    margin-left:10px;
+}
