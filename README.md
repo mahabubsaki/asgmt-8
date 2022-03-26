@@ -2,7 +2,7 @@
 
 # Getting Started with Food Point App
 
-This project was bootstrapped by [Mahabub Saki](https://www.facebook.com/mahabubsaki/).
+This project was developed by [Mahabub Saki](https://www.facebook.com/mahabubsaki/).
 
 ## Available Scripts
 
